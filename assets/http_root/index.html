@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <script src="main.js"></script>
+    <title>Camera</title>
+</head>
+<body onload="onLoad()">
+
+<table>
+
+    <tr>
+        <td>Width</td>
+        <td>
+            <select id="selectorWidth">
+                <option value="1024">1024 px</option>
+                <option value="2048">2048 px</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Height</td>
+        <td>
+            <select id="selectorHeight">
+                <option value="1024">1024 px</option>
+                <option value="2048">2048 px</option>
+            </select>
+        </td>
+    </tr>
+
+
+    <tr>
+        <td>FPS (from)</td>
+        <td>
+            <select id="selectorFpsMin">
+                <option value="15">15</option>
+                <option value="22">22</option>
+                <option value="30">30</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>FPS (to)</td>
+        <td>
+            <select id="selectorFpsMax">
+                <option value="15">15</option>
+                <option value="22">22</option>
+                <option value="30">30</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>I-frame interval</td>
+        <td>
+            <select id="selectorIframeInterval">
+                <option value="1">1 sec</option>
+                <option value="2">2 sec</option>
+                <option value="3">3 sec</option>
+                <option value="5">5 sec</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Bitrate</td>
+        <td>
+            <select id="selectorVideoBitrate">
+                <option value="250000">250.000</option>
+                <option value="500000">500.000</option>
+                <option value="750000">750.000</option>
+                <option value="1000000">1.000.000</option>
+                <option value="1500000">1.500.000</option>
+                <option value="2000000">2.000.000</option>
+                <option value="2500000">2.500.000</option>
+                <option value="3000000">3.000.000</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>HLS segment length</td>
+        <td>
+            <select id="selectorLength">
+                <option value="1">1 sec</option>
+                <option value="2">2 sec</option>
+                <option value="5">5 sec</option>
+                <option value="10">10 sec</option>
+                <option value="30">30 sec</option>
+                <option value="60">60 sec</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>HLS segments count</td>
+        <td>
+            <select id="selectorCount">
+                <option value="0">No limitations</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="50">50</option>
+                <option value="100">100</option>
+            </select>
+        </td>
+    </tr>
+
+</table>
+
+<input type="button" id="btnSet" value="Apply" onclick="onSetClick()"/>
+<input type="button" id="btnStart" value="Start" onclick="onStartClick()"/>
+<input type="button" id="btnStop" value="Stop" onclick="onStopClick()"/>
+
+</body>
+</html>

@@ -1,0 +1,3 @@
+set solib-search-path /Users/asmirnov/Documents/dev/src/FFmpegTest/obj/local/armeabi
+source /softdev/android-ndk-r10c/prebuilt/common/gdb/common.setup
+directory /softdev/android-ndk-r10c/platforms/android-18/arch-arm/usr/include /Users/asmirnov/Documents/dev/src/FFmpegTest/jni/include /softdev/android-ndk-r10c/sources/cxx-stl/system
